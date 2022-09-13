@@ -1,0 +1,15 @@
+name: ptenv
+channels:
+  - conda-forge
+  - anaconda
+  - pytorch
+dependencies:
+  - python
+  - numpy
+  - anaconda::ipython
+  - anaconda::scikit-learn
+  - conda-forge::matplotlib-base
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - conda-forge::cudatoolkit=11.6

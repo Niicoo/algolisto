@@ -1,0 +1,4 @@
+/* To use the full width of the windows */
+.wy-nav-content {
+    max-width: none;
+}

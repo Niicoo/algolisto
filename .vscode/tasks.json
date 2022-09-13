@@ -1,0 +1,15 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}",
+    },
+    "tasks": [
+        {
+            "label": "Build in HTML",
+            "type": "shell",
+            "command": "~/miniconda3/envs/sphinx-blog/bin/sphinx-build -b html docs/source/ docs/build/html"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+name: tfenv
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python
+  - numpy
+  - anaconda::ipython
+  - anaconda::scikit-learn
+  - conda-forge::matplotlib-base
+  - pip
+  - pip:
+    - tensorflow-gpu==2.9.*
+variables:
+  #PATH: /usr/local/cuda/bin:$PATH
+  LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda/include:$LD_LIBRARY_PATH

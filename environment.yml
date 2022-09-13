@@ -1,0 +1,13 @@
+name: sphinx-blog
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python
+  - pyyaml
+  - sphinx>=4.3
+  - docutils=0.16
+  - conda-forge::m2r2
+  - pip
+  - pip:
+    - sphinx_rtd_theme>=0.5.1

@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "~/miniconda3/envs/sphinx-blog/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+}
