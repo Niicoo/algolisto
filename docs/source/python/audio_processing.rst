@@ -133,14 +133,14 @@ Writing
     :height: 250pt
 
 
+.. note::
+    Except wave format, there is no easy and straightforward way to write audio files in python. Therefore, it's best to write first the audio file in the wave format and convert it with tools such as **ffmpeg**.
+
 
 Opening Other audio files formats
 #################################
 
 The best current library to open audio files other than wave files is **librosa**.
-
-.. note::
-    Except wave format, there is no easy and straightforward way to write audio files in python. Therefore, it's best to write first the audio file in the wave format and convert it with tools such as **ffmpeg**.
 
 
 You can install **librosa** by running:

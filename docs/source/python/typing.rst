@@ -155,7 +155,15 @@ You can use **mypy** (:code:`conda install -c conda-forge mypy`) to check the co
 Examples
 ########
 
-To Do
+Multiple possible input type:
+
+.. code-block:: python
+
+    from tying import Union
+    from numbers import Number
+
+    Union[Number, str]
+
 
 ------------------------------------------------------------
 

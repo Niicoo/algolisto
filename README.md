@@ -20,6 +20,7 @@ sphinx-build -b html docs/source/ docs/build/html
 
 ## TODO  
 - timer in python
+- dataclasses /pydantic / attrs
 - write csv / excel in python
 - Page to show how to add a button with action in a figure
 - Create a sphinx Extension to automatically download README.md from a github public project link and render it in a page.

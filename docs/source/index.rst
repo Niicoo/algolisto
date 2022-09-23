@@ -87,6 +87,7 @@ CONTENTS
    /linux/useful_commands
    /linux/ffmpeg_commands
    /linux/configuration
+   /linux/kernel_update
 
 
 .. toctree::
