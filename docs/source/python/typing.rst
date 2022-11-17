@@ -165,6 +165,28 @@ Multiple possible input type:
     Union[Number, str]
 
 
+Generator function (yield):
+
+.. code-block:: python
+
+    from collections.abc import Generator
+
+    def test(N: int) -> Generator[int]:
+        for k in range(N):
+            yield k
+
+
+Iterable object:
+
+.. code-block:: python
+
+    from collections.abc import Iterable
+
+    def test(params: Iterable[int]):
+        for p in params:
+            print(p)
+
+
 ------------------------------------------------------------
 
 **Sources**:
