@@ -56,7 +56,7 @@ CONTENTS
    /python/path_manipulations
    /python/conda
    /python/multiprocessing
-   /python/object_oriented
+   /python/classes
    /python/argparser
    /python/logging
    /python/fourier
@@ -87,7 +87,15 @@ CONTENTS
    /linux/useful_commands
    /linux/ffmpeg_commands
    /linux/configuration
-   /linux/kernel_update
+   /linux/kernel
+   /linux/grub
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Web
+
+   /web/using_apis
 
 
 .. toctree::
@@ -98,6 +106,7 @@ CONTENTS
    /vscode/task
    /vscode/configuration
    /vscode/remote_ssh
+
 
 .. toctree::
    :maxdepth: 2
