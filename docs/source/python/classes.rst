@@ -85,9 +85,9 @@ Overload comparison operators
 
 Comparison operators:
 
-- :code:`< `  with  :code:`__lt__(self, other)`
+- :code:`<`   with  :code:`__lt__(self, other)`
 - :code:`<=`  with  :code:`__le__(self, other)`
-- :code:`> `  with  :code:`__gt__(self, other)`
+- :code:`>`   with  :code:`__gt__(self, other)`
 - :code:`>=`  with  :code:`__ge__(self, other)`
 - :code:`==`  with  :code:`__eq__(self, other)`
 - :code:`!=`  with  :code:`__ne__(self, other)`

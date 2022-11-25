@@ -79,6 +79,12 @@ CONTENTS
    /bash/path_manipulations
    /bash/divers
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Git
+
+   /git/basics
+
 
 .. toctree::
    :maxdepth: 2

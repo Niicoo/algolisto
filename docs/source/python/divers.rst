@@ -362,6 +362,80 @@ Install pyproj using the command:
     # Convert from Lon/Lat/Elevation to ECEF
     x, y, z = T_LATLON_TO_ECEF.transform(lon, lat, elevation)
 
+Running a OS command / subprocess
+#################################
+
+.. important::
+    Without entering into detail, just don't use :code:`os.system`.
+
+An equivalent of :code:`os.system` could be:
+
+.. code-block:: python
+
+    import os
+    import subprocess
+
+    exit_code = os.system("ls -al")
+    exit_code = subprocess.Popen("ls -al", shell=True).wait()
+
+
+Below is some more examples:
+
+.. code-block:: python
+
+    import subprocess
+
+    # Simple command with arguments
+    p = subprocess.Popen(["ls", "-al"])
+    exit_code = p.wait()
+
+    # More complex commands, 
+    p = subprocess.Popen("ls -al | grep README.md", shell=True)
+    exit_code = p.wait()
+
+    # Get the output from the command
+    p = subprocess.Popen(["ls", "-al"], stdout=subprocess.PIPE)
+    exit_code = p.wait()
+    output = p.stdout.read()
+    # You can also use:
+    output = subprocess.check_output(["ls", "-al"])
+
+    # Hide the output of the subprocess
+    p = subprocess.Popen(["ls", "-al"], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+    exit_code = p.wait()
+
+
+When you can, avoid using shell=True, some impacts of using :code:`shell=True`:
+
+- allow accessing environment variable
+- allow running more complex commands
+- less secure, vulnerable to attacks
+
+More info in the `documentation <https://docs.python.org/3/library/subprocess.html#popen-constructor>`_ or in this `stackoverflow answer <https://stackoverflow.com/a/3172488/10109560>`_.
+
+
+
+NamedTuple
+##########
+
+- Esay to create, useful for function returned values.
+- Can still be used as a normal tuple object
+
+
+.. code-block:: python
+
+    from collections import namedtuple
+
+    Point = namedtuple('Point', ['x', 'y'])
+
+    pt1 = Point(1.0, 5.0)
+    pt2 = Point(2.5, 1.5)
+
+    print(f"pt1: x={pt1.x}, y={pt1.y}")
+    print(f"pt2: x={pt2[0]}, y={pt2[1]}")
+
+
+
 ------------------------------------------------------------
 
 **Sources**:
@@ -371,3 +445,6 @@ Install pyproj using the command:
 - functools.reduce: https://www.geeksforgeeks.org/reduce-in-python/
 - single star, double star: https://stackoverflow.com/questions/2921847/what-does-the-star-and-doublestar-operator-mean-in-a-function-call
 - single star, double star: https://docs.python.org/3/tutorial/controlflow.html#unpacking-argument-lists
+- Hide subprocess output: https://stackoverflow.com/a/11269627/10109560
+- NamedTuple: https://stackoverflow.com/a/2970722/10109560
+
