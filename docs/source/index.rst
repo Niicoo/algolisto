@@ -58,6 +58,7 @@ CONTENTS
    /python/multiprocessing
    /python/classes
    /python/argparser
+   /python/csv_excel
    /python/logging
    /python/fourier
    /python/google_earth
