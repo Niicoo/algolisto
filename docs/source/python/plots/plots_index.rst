@@ -11,4 +11,5 @@ Plots
    scatter
    pie_chart
    animation
+   widgets
    divers

@@ -20,7 +20,6 @@ sphinx-build -b html docs/source/ docs/build/html
 
 ## TODO  
 - Page: timer in python
-- Page: how to add a button with action in a figure
 - Feature: Create a sphinx Extension to automatically download README.md from a github public project link and render it in a page.
 
 
