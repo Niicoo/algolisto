@@ -19,7 +19,6 @@ sphinx-build -b html docs/source/ docs/build/html
 `make clean` to delete the build directory.  
 
 ## TODO  
-- Page: timer in python
 - Feature: Create a sphinx Extension to automatically download README.md from a github public project link and render it in a page.
 
 

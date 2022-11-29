@@ -56,6 +56,7 @@ CONTENTS
    /python/path_manipulations
    /python/conda
    /python/multiprocessing
+   /python/timer
    /python/classes
    /python/argparser
    /python/csv_excel
