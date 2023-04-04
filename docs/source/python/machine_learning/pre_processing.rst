@@ -83,6 +83,10 @@ Installing sklearn and pandas:
 
 
     # Features scaling
+    # Standarization: sklearn.preprocessing.StandardScaler()
+    # X' = (X - mean) / variance
+    # Normalization: sklearn.preprocessing.MinMaxScaler()
+    # X' = (X - Xmin) / (Xmax - Xmin) [0 - 1]
     sc_X = StandardScaler()
     X_train = sc_X.fit_transform(X_train)
     X_test = sc_X.transform(X_test)
