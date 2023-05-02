@@ -11,3 +11,5 @@ dependencies:
   - pip
   - pip:
     - sphinx_rtd_theme>=0.5.1
+    - git+https://github.com/SuperKogito/sphinxcontrib-pdfembed.git
+    - sphinx-tabs

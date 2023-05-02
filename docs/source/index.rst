@@ -16,6 +16,8 @@ I used the `Sphinx <https://www.sphinx-doc.org/en/master/>`_ documentation Gener
 
 I'm working on Linux (Ubuntu based) machines, so there *might* be errors on Windows for some codes if there are OS features dependencies.
 
+Since the emergence of large language models such as chatGPT by openai, I'm using it a lot to help me to write the pages more quickly, but I'm making sure the codes provided by these models are working and I'm double checking the information provided when it's necessary.
+
 Please feel free to contact me if:
 
 - You spotted mistakes
@@ -86,6 +88,20 @@ CONTENTS
    :caption: Git
 
    /git/basics
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Databases
+
+   /databases/sql
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Docker
+
+   /docker/basics
 
 
 .. toctree::
